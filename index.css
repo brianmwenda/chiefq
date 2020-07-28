@@ -989,7 +989,7 @@ footer div i:hover{
     background-color: gray;
     color: black;
 }
-@media (min-width:667px){
+@media (min-width:867px){
     header .navbar{
         /* background-color: red; */
     }
