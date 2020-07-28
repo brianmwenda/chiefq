@@ -11,13 +11,30 @@ body{
     box-sizing: border-box;
     margin: 0;
 }
+#move{
+
+    position: fixed;
+    right: 25px;
+    bottom: 20px;
+    width: 33px;
+    height: 33px;
+    line-height: 40px;
+    background-color: rgba(0,0,0,0.4);
+   text-align: center;
+    border-radius: 50%;
+  }
+  #move span{
+    
+    font-size: 30px;
+    color: rgb(175, 175, 175);
+  }
 .container{
     max-width: 100%;
     margin: 0;
   
 }
 .img{
-    width: 40px;
+    width: 60px;
     height: auto;
  
 }
@@ -43,7 +60,7 @@ header .row{
     justify-content: space-between; 
     align-items: center;
     background: rgb(247, 247, 252);
-
+height: 60px;
 }
 #close,
 #open{
@@ -60,7 +77,7 @@ header .row{
     
 }
 .closeopen-menu i{
-    font-size: 30px;
+    font-size: 40px;
     
     padding: 0 0 0 10px;
     color: black;
@@ -76,7 +93,7 @@ header .row{
 
 }
 .close-open i{
-    font-size: 30px;
+    font-size: 40px;
     padding: 0 0 0 10px;
     color: black;
 }
@@ -110,21 +127,25 @@ header .brand-name a{
   }
   /*start activated animation */
   header .activated ul{
- 
+ position: absolute;
     list-style-type: none;
     padding: 0;
-    margin-top:30%;
-  
+    
+    left:40%;
+    transform: translateX(-50%);
+  top: 50%;
+  transform: translateY(-50%);
 
     }
     header .activated ul li{
     display: block;
-    margin-left:40%;
+    /* margin-left:40%; */
+    padding: 20px 0;
 
     }
     header .activated ul li a{
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 15px;
+        font-size: 20px;
         text-decoration: none;
         display: block;
         line-height: 72px;
@@ -136,7 +157,7 @@ header .brand-name a{
     header .activated ul li a::before{
         content: '';
         height: 2px;
-        background-color: white;
+        background-color: rgb(212, 199, 199);
         width: 0%;
         position: absolute;
         right: 0px;
@@ -157,7 +178,9 @@ header .navbar ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
+    transition: all 1s ease-in-out;
     }
+
     header .navbar ul li{
     display: block;
     margin-left:35px;
@@ -190,6 +213,7 @@ header .navbar ul{
         width: 100%;
         left: 0;
     }
+
     /* home */
     .home{
         max-width: 100%;
@@ -314,13 +338,14 @@ header .navbar ul{
  }
  .more{
      padding: 10px;
+     display: block;
  }
  .more-info div{
      max-width: 100%;
     
  }
  .more-info img{
-     width: 90%;
+     width: 60%;
      height: auto; 
      padding: 10px;
      border-radius: 50%;
@@ -330,7 +355,7 @@ header .navbar ul{
  }
  .more bold{
      color: goldenrod;
-     font-family: cursive;
+     font-family: Georgia, 'Times New Roman', Times, serif;
  }
  .more p{
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -343,8 +368,10 @@ header .navbar ul{
      
  }
  .more ul li{
-     font-family: cursive;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
      list-style-type: none;
+     padding: 5px 0;
  }
  .more .links{
      align-items: center;
@@ -504,8 +531,8 @@ display: none;
     .services .service-container .offer a{
         color:whitesmoke;
         font-size: 30px;
-        width: 100px;
-        height: 100px;
+        width: auto;
+        height: auto;
         background-color: goldenrod;
         padding: 8px 10px;
 
@@ -540,16 +567,16 @@ overflow: hidden;
 .workclose{
     position: absolute;
     right: 0;
-    padding: 0 20px 0 0;
+    padding: 0 30px 0 0;
     z-index: 10;
 }
 .workopen i{
 
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .workclose i{
-    font-size: 40px;
+    font-size: 50px;
 
 }
 .work hr{
@@ -639,8 +666,8 @@ color: white;
 
 }
  .images img{
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
 }
 .images div p,
 .images div p{
@@ -799,7 +826,8 @@ transform: translateX(-50%);
 }
 .slide p{
     color: black;
-    font-family: cursive;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
     border:none;
 }
 .slide h4{
@@ -833,7 +861,7 @@ width: 100%;
 }
 /* blogs start */
 .blogs{
- background-color: rgb(236, 250, 250);
+ background-color: rgb(241, 250, 250);
     width: 100%;
     height: auto;
     padding: 3% 0;
@@ -873,8 +901,8 @@ width: 100%;
     height: 100%;
 }
 .details img{
-    width: 90%;
-    height: 90%;
+    width: 60%;
+    height: 60%;
     transition: all .5s ease;
 }
 .details:hover img{
@@ -892,6 +920,11 @@ width: 100%;
     padding: 5px 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(75, 75, 75);
+    font-size: 20px;
+}
+#date{
+    padding: 5px 20px;
+    font-family: cursive;
 }
 .details div h3{
     padding: 5px 20px;
@@ -925,6 +958,7 @@ margin: 0 0 20px 0;
     }
     .contact h1{
         color: white;
+        font-size: 40px;
     }
 .contact-info{
     width: 100%;
@@ -942,17 +976,23 @@ background-color: rgba(17, 17, 17, 0.7);
     padding: 20px 0;
     
 }
+.contact-info h5{
+    color:rgb(214, 214, 214);
+    font-size: 20px;
+}
 .contact-info p{
     padding: 5px 0;
+    font-size: 20px;
     color:rgb(170, 170, 170);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .contact-info i{
     color: goldenrod;
-    font-size: 30px;
+    font-size: 40px;
     padding: 10px 0;
 }
 #bri{
+  
     color:rgb(252, 211, 135)
 }
 /* foter */
@@ -967,7 +1007,7 @@ footer p{
     color:white;
     font-family: cursive;
     padding:0 0 10px 0;
-    font-size: 10px;
+    font-size: 20px;
 }
 footer div{
     width: 100%;
