@@ -15,7 +15,7 @@
     <!--start header  -->
     <header>
         <div class="container">
-            <div class="row">
+            <div class="row" >
                 <div class="brand-name">
                     <a href="#home" class="logo"><img src="pics/logo.png" class="img" alt="" srcset=""></a>
                     <a href="#home" class="logo2"><img src="pics/logo2.png" class="img" alt="" srcset=""></a>
@@ -27,7 +27,7 @@
                   <div class="close-open">
                     <i id="close" class="icon ion-ios-close"></i>
                   </div>
-                    <ul>
+                    <ul >
                         <li id="links"><a href="#home" class="active">Home</a></li>
                         <li id="links"><a href="#about">About</a></li>
                         <li id="links"><a href="#services">Services</a></li>
@@ -77,7 +77,7 @@
                         <img src="work/2.jpg" alt="" srcset="" >
 
                   <div class="more">
-                    <h2>I`M brian Mwenda</h2>
+                   
                     <h3>A <bold>webdeveloper</bold>  based in <bold>kenya</bold> </h3>
                     <p>This site can’t be reachedgithub.com’s server IP address could not be found.
                         Try:
@@ -603,7 +603,7 @@
                 </section>
                 
                 <div>
-                  <p>01/07/2020</p>
+                  <h5 id="date">01/07/2020</h5>
                   <h3>Make your marketing digital</h3>
                   <p>This site can’t be reachedgithub.com’s server IP address could not be found.
                     Try:
@@ -621,7 +621,7 @@
                   <img src="work/1.jpg" alt="" srcset="">
                 </section>
                 <div>
-                  <p>01/07/2020</p>
+                  <h5 id="date">01/07/2020</h5>
                   <h3>Make your marketing digital</h3>
                   <p>This site can’t be reachedgithub.com’s server IP address could not be found.
                     Try:
@@ -639,7 +639,7 @@
                   <img src="work/1.jpg" alt="" srcset="">
                 </section>
                 <div>
-                  <p>01/07/2020</p>
+                  <h5 id="date">01/07/2020</h5>
                   <h3>Make your marketing digital</h3>
                   <p>This site can’t be reachedgithub.com’s server IP address could not be found.
                     Try:
@@ -664,19 +664,19 @@
 
               <div>
                 <a href="https://api.whatsapp.com/send?phone=+254706911425"><i  class="icon ion-logo-whatsapp"></i></a>
-                <H5 style="color:rgb(214, 214, 214)">CONTACT ME</H5>
+                <H5>CONTACT ME</H5>
                 <p >Get in touch<br> with me <br>on phone</p>
                 <P id="bri">+254706911425</P>
               </div>
               <div>
                 <i class="icon ion-ios-home"></i>
-                <H5 style="color:rgb(214, 214, 214)">HOME</H5>
+                <H5>HOME</H5>
                 <p>Kenya</p>
                 <P id="bri" > Meru Town, <br>P.O Box 2328-60200<br> Meru. Kenya</P>
               </div>
               <div>
                 <i class="icon ion-ios-mail"></i>
-                <H5 style="color:rgb(214, 214, 214)">MAIL</H5>
+                <H5 >MAIL</H5>
                 <P >Send me an <br>Email and  <br> i`ll be glad to <br>sort you out ASAP.
                   <P id="bri">Brianmwe425@gmail.com</P>
                 </P>
@@ -684,6 +684,9 @@
             </div>
           </section>
           <!-- end contact -->
+          <div id="move" onclick=topFunction()>
+            <span  class="fa fa-angle-up"></span>
+          </div>
           <!-- footer -->
           <footer>
             
@@ -708,4 +711,28 @@
           </footer>
 </body>
 <script src="js.js"></script>
-</html>
+</html><script>
+  //=========================scroll up button======================//
+  //Get the button
+  var mybutton = document.getElementById('move');
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 0) {
+      mybutton.style.display = "";
+      document.querySelector(".sidelink").style.display = 'none';
+    } else {
+      mybutton.style.display = "none";
+      document.querySelector(".sidelink").style.display = '';
+    }
+  }
+
+      
+  // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
